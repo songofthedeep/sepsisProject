@@ -6,13 +6,15 @@
 
 :root {
   --primary-color: #6091ff;
+  --light-color: #a9a9a9;
+  --dark-color: #325ab8;
 }
 
 body {
   font-family: "Catamaran", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: rgb(205, 205, 205);
+  background-color: #a9a9a9;
 }
 
 a {
@@ -55,9 +57,196 @@ img {
   color: var(--primary-color);
 }
 
+/* First heading */
+.first {
+  margin-bottom: 50px;
+}
+
+.first .container {
+  background: url("#") no-repeat; /* MAKE THIS AN ACTUAL IMAGE AAAAAAAAAAAAAAAAAAAA*/
+  background-size: contain;
+  background-position: center bottom;
+  height: 550px;
+}
+
+.first .first-content {
+  width: 100%;
+}
+
+.first .first-text {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* FAQs */
+.faq {
+  padding: 40px 0;
+}
+
+.faq .faq-group {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.faq .faq-group .faq-group-header {
+  padding: 20px 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.faq .faq-group .faq-group-header h4 {
+  font-weight: 600;
+  width: 95%;
+}
+
+.faq .faq-group .faq-group-header i {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.faq .faq-group .faq-group-body {
+  display: none;
+}
+
+.faq .faq-group .faq-group-body.open {
+  display: block;
+}
+
+.faq ul.faq-menu {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq ul.faq-menu li {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.faq ul.faq-menu li.active {
+  background: #fff;
+  color: #000;
+}
+
 /* Utility classes */
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.container-sm {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Buttonssssss */
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  background: var(--light-color);
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  opacity: 0.75;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* Text shenanigans */
+.text-xxl {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+
+.text-xl {
+  font-size: 2.25rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 40px 0 20px;
+}
+
+.text-lg {
+  font-size: 1.75rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 30px 0 20px;
+}
+
+.text-md {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 20px 0 10px;
+}
+
+.text-sm {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Background stufds */
+.bg-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.bg-light {
+  background: var(--light-color);
+  color: #333;
+}
+
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.bg-black {
+  background: #000;
+  color: #fff;
+}
+
+.bg-white {
+  background: #fff;
+  color: #333;
 }
