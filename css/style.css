@@ -164,8 +164,8 @@ img {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
   justify-content: center;
   align-items: center;
 }
@@ -350,16 +350,17 @@ img {
 }
 
 .first .container {
-  background: url(../images/#) no repeat;
-  background-size: 350px 400px;
-  background-position: bottom;
-  height: 770px;
+  height: 100%;
 }
 
 .first .first-content,
 .first .first-text {
   width: 100%;
-  text-align: center;
+  text-align: left;
+}
+
+.first ul {
+  margin: 20px;
 }
 
 @media (max-width: 500px) {
